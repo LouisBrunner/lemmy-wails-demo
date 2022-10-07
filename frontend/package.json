@@ -1,0 +1,18 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "lemmy-wails dev",
+    "build": "lemmy-wails build",
+    "types": "lemmy-wails types",
+    "lint": "lemmy-wails lint",
+    "format": "lemmy-wails format",
+    "format-fix": "lemmy-wails format-fix",
+    "postinstall": "lemmy-wails setup"
+  },
+  "dependencies": {
+    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?main"
+  }
+}
