@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     name: Build App
-    uses: LouisBrunner/lemmy-wails/.github/workflows/build-app.yml@640d8aca73f02f7a6b7fe09a1ed9553bce80ec1b
+    uses: LouisBrunner/lemmy-wails/.github/workflows/build-app.yml@b30dc2aea4c08ded2d67c7dcb9f3979a70aaccf4
     with:
       name: Lemmy Wails Demo
     secrets: inherit

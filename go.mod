@@ -3,7 +3,7 @@ module github.com/LouisBrunner/lemmy-wails-demo
 go 1.18
 
 require (
-	github.com/LouisBrunner/lemmy-wails v0.0.0-20221007174947-640d8aca73f0
+	github.com/LouisBrunner/lemmy-wails v0.0.0-20221007184155-b30dc2aea4c0
 	github.com/sirupsen/logrus v1.9.0
 	honnef.co/go/tools v0.3.3
 )
