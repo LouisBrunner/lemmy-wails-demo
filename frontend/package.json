@@ -13,6 +13,6 @@
     "postinstall": "lemmy-wails setup"
   },
   "dependencies": {
-    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?main"
+    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?640d8aca73f02f7a6b7fe09a1ed9553bce80ec1b"
   }
 }
