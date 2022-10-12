@@ -1,2 +1,6 @@
 dist
 node_modules
+wailsjs
+tsconfig.json
+.prettierrc.json
+package.json.md5

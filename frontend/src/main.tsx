@@ -1,4 +1,4 @@
+import {start} from "@lemmy/start";
 import {App} from "App";
-import {main} from "lemmy-wails/main";
 
-main(App)
+start({App});

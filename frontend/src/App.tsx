@@ -1,22 +1,16 @@
-import { MainWindow } from "lemmy-wails/components/MainWindow";
-import { createTheme, styled } from "@mui/material/styles";
-import { Box } from "@mui/system";
-import { Demo } from "pages/Demo";
+import {MainWindow, WrapperProps} from "@lemmy/components/MainWindow";
+import {Environment} from "@wailsjs/runtime";
+import {Demo} from "pages/Demo";
 
-const theme = createTheme();
-
-const MyBox = styled(Box)`
-  background: red;
-  height: 100vh;
-  display: flow-root;
-`;
+const Background = ({children}: WrapperProps): JSX.Element => {
+  return <div className="bg-red h-screen flow-root">{children}</div>;
+};
 
 export const App = (): JSX.Element => {
   return (
     <MainWindow
-      theme={theme}
-      wrapper={MyBox}
-      routers={[
+      Wrapper={Background}
+      routes={[
         {
           path: "/",
           element: <Demo />,

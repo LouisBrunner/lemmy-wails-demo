@@ -1,9 +1,6 @@
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import Typography from "@mui/material/Typography";
 import {Greet} from "@wailsjs/go/bindings/bindings";
 import {ChangeEvent, FormEvent, useCallback, useState} from "react";
+import {Button, Input} from "react-daisyui";
 
 export const Demo = (): JSX.Element => {
   const [resultText, setResultText] = useState("Please enter your name below 👇");
@@ -26,24 +23,20 @@ export const Demo = (): JSX.Element => {
   );
 
   return (
-    <Box
-      sx={{
-        marginTop: 8,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <Typography component="h1" variant="h5">
-        Greetings
-      </Typography>
-      <Box component="form" onSubmit={greet} noValidate sx={{mt: 1}}>
-        <Typography>{resultText}</Typography>
-        <TextField margin="normal" required fullWidth id="name" label="Name" name="name" autoFocus onChange={updateName} />
-        <Button type="submit" fullWidth variant="contained" sx={{mt: 3, mb: 2}}>
+    <div className="mt-4 flex flex-col items-center">
+      <h1 className="text-3xl my-4">Greetings</h1>
+      <form className="mt-1" onSubmit={greet} noValidate>
+        <p>{resultText}</p>
+        <div className="form-control w-full max-w-xs">
+          <label className="label" htmlFor="name">
+            <span className="label-text">Name</span>
+          </label>
+          <Input id="name" name="name" required onChange={updateName} />
+        </div>
+        <Button type="submit" fullWidth className="mt-3 mb-2">
           Greet
         </Button>
-      </Box>
-    </Box>
+      </form>
+    </div>
   );
 };

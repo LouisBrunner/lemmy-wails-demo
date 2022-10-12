@@ -10,9 +10,9 @@
     "lint": "lemmy-wails lint",
     "format": "lemmy-wails format",
     "format-fix": "lemmy-wails format-fix",
-    "postinstall": "lemmy-wails setup"
+    "postinstall": "npm rebuild --ignore-scripts && lemmy-wails setup"
   },
   "dependencies": {
-    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?b30dc2aea4c08ded2d67c7dcb9f3979a70aaccf4"
+    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?v0.0.1"
   }
 }
