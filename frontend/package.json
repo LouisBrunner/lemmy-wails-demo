@@ -13,6 +13,6 @@
     "postinstall": "npm rebuild --ignore-scripts && lemmy-wails setup"
   },
   "dependencies": {
-    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?6ab8dd9a4671feaaacab7557dea4947a0b25d06b"
+    "lemmy-wails": "https://gitpkg.now.sh/LouisBrunner/lemmy-wails/frontend?v0.0.2"
   }
 }
