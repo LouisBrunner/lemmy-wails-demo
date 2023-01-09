@@ -63,9 +63,9 @@ require (
 	github.com/sergi/go-diff v1.1.0 // indirect
 	github.com/stretchr/testify v1.7.2 // indirect
 	github.com/tc-hib/winres v0.1.5 // indirect
-	github.com/tidwall/gjson v1.8.0 // indirect
-	github.com/tidwall/match v1.0.3 // indirect
-	github.com/tidwall/pretty v1.1.0 // indirect
+	github.com/tidwall/gjson v1.9.3 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tidwall/sjson v1.1.7 // indirect
 	github.com/tkrajina/go-reflector v0.5.5 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
